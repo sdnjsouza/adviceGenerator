@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+html{
+    background-color: #1E2430;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+    height: 100vh;
+
+}
+.card-advice{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #313A49;
+
+    width: 30rem;
+    max-height: 90%;
+
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+}
+.advice-number{
+  color: #54FFAD;
+  letter-spacing: 5px;
+}
+.advice-text{
+    color: #D5E9F0;
+    font-size:  28px;
+    font-weight: 800;
+    margin: 20px 0;
+}
+.card-advice a{
+    background:#53FFAB ;
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all .2s ease;
+
+    padding: 20px;
+    border-radius:200px;
+}
+.card-advice a:hover{
+    cursor: pointer;
+    background: #53FFAB;
+    box-shadow: 0px 0px 12px 5px rgba(83,255,171,0.8);
+    transform:translate(-50%,-50%) scale(1.1);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width:500px) {
+    .card-advice{
+ 
+        width: 20rem;
+      
+    }
+}
